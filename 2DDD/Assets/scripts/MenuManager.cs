@@ -1,15 +1,21 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
    //註解
 
-    void StartGame()
+   public void StartGame()
     {
+        print("開始遊戲");
+        SceneManager.LoadScene(1);
+    }
+    public void StopGame() 
+    {
+        print("離開遊戲");
+        Application.Quit();
+
 
     }
-    void StopGame() 
-    { 
 
-    }
 }
